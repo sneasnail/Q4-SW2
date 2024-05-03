@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+<style>
+body {background-color: #ffffff;}
+h1   {font-family: sans-serif;}
+
+</style>
+
+
+
+<center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv6VgwFlnl4xm2KDEWZT-ca-ztEvyXT2B8Z52aFrH3zBp0K0NyalJVJdXv4Vn2jEwx8EaFczAyALGTwOcqm1h_Dja8NlCSeBMG-qkxnpCd3u64dgdDwyNyGEZZjuHI6etCE8aqZuUymBI/s600/shiny.png"width= "1000" length= "5000" ></center>
+
+
+<center> <h1> ★ Prof. Miaow's very 100% accurate calculator ★</h1> </center>
+<center> <h4>"Helping people to not fail math since 2024!"</h4> </center>
+
+
+
+<center> 
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmCGT_Zm1wxcowL9t4b72NtTWMGpxpJQB4BUCIqI2xRc0nOzH7RLySjgSzHDDT34UDPPg8tqg-d3Kz87AKQMTHVGpXe5EySWKaVpGmPZ7YOgrLP_Yuz5WiYc6SgN2P8zivqq1J7cqbNVTO/s200/animal_character_hakui_w_neko.png"width= "200" length= "200" > 
+
+</center>
+
+<br> 
+
+<center> <h4> Input values below and simply click the corresponding button for your answer ! </h4> </center>
+<form>
+  
+  <center> 
+
+  <input placeholder="Value for x" type="text" class="form" id="x" style="background-color: #fac27d";>
+
+  <input placeholder="Value for y" type="text" class="form" id="y" style="background-color: #fac27d";>
+
+ </center>
+ <br>
+
+</form>
+
+ <br> 
+ <center>
+        <button onclick="product()" type="button" class="btn btn-primary btn-lg"> Product of x and y </button>
+
+        <button onclick="exponent()" type="button" class="btn btn-primary btn-lg"  >X raised to y</button><br>
+
+        <button onclick="remainder()" type="button" class="btn btn-primary btn-lg" >Get the remainder</button>
+
+        <button onclick="equal()" type="button" class="btn btn-primary btn-lg" >Check if x is equal to y</button>
+
+</center>
+
+<script>
+
+function product() {
+            let x = parseFloat(document.getElementById('x').value);
+            let y = parseFloat(document.getElementById('y').value);
+            alert(x + " times " + y + " is " + (x * y));
+        }
+
+function exponent() {
+            let x = parseFloat(document.getElementById('x').value);
+            let y = parseFloat(document.getElementById('y').value);
+            alert(x + " raised to " + y + " is " + (x ** y));
+        }
+
+function remainder() {
+            let x = parseFloat(document.getElementById('x').value);
+            let y = parseFloat(document.getElementById('y').value);
+            alert("the remainder of " + x + " and " + y + " is " + (x % y));
+        }
+
+function equal() {
+            let x = parseFloat(document.getElementById('x').value);
+            let y = parseFloat(document.getElementById('y').value);
+
+            if (x === y) {
+                alert(x + " is equal to " + y);
+            } 
+
+            if (x !== y){
+                alert(x + " is not equal to " + y);
+            }
+        }
+</script>
+
+<br>
+<br>
+
+<center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv6VgwFlnl4xm2KDEWZT-ca-ztEvyXT2B8Z52aFrH3zBp0K0NyalJVJdXv4Vn2jEwx8EaFczAyALGTwOcqm1h_Dja8NlCSeBMG-qkxnpCd3u64dgdDwyNyGEZZjuHI6etCE8aqZuUymBI/s600/shiny.png"width= "1000" length= "5000" ></center>
+
+</body>
+</html>
